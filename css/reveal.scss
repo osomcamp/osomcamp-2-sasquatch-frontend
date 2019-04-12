@@ -286,7 +286,7 @@ $controlsArrowAngleActive: 36deg;
 		border: 0;
 		outline: 0;
 		cursor: pointer;
-		color: currentColor;
+		color: /* currentColor */  #18D766;
 		transform: scale(.9999);
 		transition: color 0.2s ease,
 					opacity 0.2s ease,
@@ -311,7 +311,7 @@ $controlsArrowAngleActive: 36deg;
 		width: $controlArrowLength;
 		height: $controlArrowThickness;
 		border-radius: $controlArrowThickness/2;
-		background-color: currentColor;
+		background-color: /* currentColor */  #18D766;
 
 		transition: all 0.15s ease, background-color 0.8s ease;
 		transform-origin: floor(($controlArrowThickness/2)*10)/10 50%;
@@ -531,7 +531,7 @@ $controlsArrowAngleActive: 36deg;
 		height: 100%;
 		width: 0px;
 
-		background-color: currentColor;
+		background-color: /* currentColor */  #18D766;
 		transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 	}
 
