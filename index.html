@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Wstęp do Buddy.Works - Maciek Palmowski</title>
+
+        <meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+		<link rel="stylesheet" href="css/wordcamp.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="logo-sa">
+			<a href="https://osomstudio.com" target="_blank">Osom Studio</a>
+		</div>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+                <section data-background-transition="zoom" class="text-center" data-background="#1e19cc">
+                    <div class="text">
+                        <img src="img/camp-logo.png" class="width100" alt="">
+                    </div>
+                </section>
+
+				<section>
+					<div class="inner">
+						<div class="inner-left">
+							<h1 class="title header-color">Wstęp do korzystania z Buddy.Works</h1>
+							
+						</div>
+						<div class="inner-right">
+							<div class="photobg-inner">
+								<div class="label">
+									Maciek Palmowski
+								</div>
+								<div class="photobg" style="background-image: url('img/laptop.jpg')">
+								</div>
+							</div>
+						</div>
+                    </div>
+                    
+                </section>
+                <!--
+                <section>
+					<div class="inner">
+						<div class="inner-right">
+							<div class="photobg-inner">
+								<div class="photobg" style="background-image: url('img/maciek.jpg')">
+								</div>
+							</div>
+						</div>
+						<div class="inner-left">
+							<h1 class="title header-color"><span>Hello</span>Maciek Palmowski</h1>
+							<div class="text">
+								<p>
+									<small>email</small>
+									m.palmowski@freshpixels.pl
+								</p>
+								<p>
+									<small>wordpress.org</small>
+									profiles.wordpress.org/palmiak
+								</p>
+								<p>
+									<small>github</small>
+									github.com/palmiak
+								</p>
+                                <p>
+									<small>Timber Collaborator</small>
+									github.com/timber/timber
+								</p>
+								
+								<p>
+									<small>WordPress Developer</small>
+									OsomStudio
+								</p>
+							</div>
+						</div>
+                    </div>
+
+                </section>
+            -->
+
+				<section>
+					<div class="inner">
+						<div class="inner-full">
+							<h1 class="title header-color">Tradycyjny sposób deploymentu</h1>
+							<div class="text">
+								<p>
+								<ul>
+                                    <li>Bazuje bardziej na kalendarzu niż na aktualnym postępie w kodzie</li>
+                                    <li>Częściej wymaga manualnej ingerencji</li>
+                                    <li>Dzień release'u jest istnym armaggedonem</li>
+                                </ul>
+                                </p>
+							</div>
+						</div>
+                    </div>
+                </section>
+                <section>
+					<div class="inner">
+						<div class="inner-full">
+							<h1 class="title header-color">Continuous integration / Continuous deployment</h1>
+							<div class="text">
+								<p>
+								<ul>
+                                    <li>Cały czas bazujemy na aktualnej wersji kodu - nie czekamy na merge związany z releasem</li>
+                                    <li>Deploymenty są ciągłe - nowe ficzery lądują na serwerze</li>
+                                    <li>Automatyzjacja procesów - kompilacja zasobów, testy etc</li>
+                                </ul>
+                                </p>
+							</div>
+						</div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Czego potrzebujemy?</h1>
+                            <div class="text">
+                                <ul>
+                                    <li>System kontroli wersji - np. GIT</li>
+                                    <li>Odpowiednio przygotowany kod</li>
+                                    <li>Oprogramowanie takie jak Buddy.Works, Jenkins, CircleCI etc</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Czemu akurat Buddy.Works?</h1>
+                            <div class="text">
+                                <ul>
+                                    <li>Jest bardzo wygodny</li>
+                                    <li>Ciągle jest rozbudowywany o kolejne ficzery</li>
+                                    <li>W porównaniu z konkurencją ma najlepszą obsługę FTP/SFTP</li>
+                                    <li>Miło jest wesprzeć rodaków</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Podział</h1>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Zmienne globalne</h1>
+                            <div class="text">
+                                <center><img src="img/podzial-zmienne-globalne.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Projekty</h1>
+                            <div class="text">
+                                <center><img src="img/podzial-projekty.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Projekt / kod</h1>
+                            <div class="text">
+                                <center><img src="img/podzial-kod.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Projekt / zmienne projektowe</h1>
+                            <div class="text">
+                                <center><img src="img/podzial-zmienne-projektowe.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Projekt / pipelines</h1>
+                            <div class="text">
+                                <center><img src="img/podzial-pipelines.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Projekt / pipeline / actions </h1>
+                            <div class="text">
+                                <center><img src="img/podzial-actions.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Projekt / pipeline / filesystem </h1>
+                            <div class="text">
+                                <center><img src="img/podzial-filesystem.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Projekt / pipeline / zmienne lokalne </h1>
+                            <div class="text">
+                                <center><img src="img/podzial-pipeline-zmienne.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Pliki z repozytorium, a filesystem</h1>
+                            <div class="text">
+                                <ul>
+                                    <li>Pliki w repozytorium zawsze zmieniamy tylko naszymi pushami</li>
+                                    <li>Filesystem to pliki z repozytorium przetowrzone przez nasze akcje</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Przykład</h1>
+                            <div class="text">
+                                <p>Katalog pluginów w repozytorium</p>
+                                <center><img src="img/example-repo.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Przykład</h1>
+                            <div class="text">
+                                <p>Akcja</p>
+                                <pre>
+                                    <code code="bash">
+composer update
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Przykład</h1>
+                            <div class="text">
+                                <p>Filesystem</p>
+                                <center><img src="img/example-filesystem.png" /></center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Zmienne środowiskowe</h1>
+                            <div class="text">
+                                <p>
+                                <ul>
+                                    <li>Są do przechowania danych taki jak np. nazwa motywu, url etc</li>
+                                    <li>Można jest następnie użyć we wszystkich pipelinach</li>
+                                    <li>Obowiązuje dziedzicznie i możliwość "przeciążenia"...</li>
+                                    <li>... ale nie w przypadku zmiennych globalnych - ich nadpisanie zawsze działa globalnie</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Zmienne środowiskowe - jak używać</h1>
+                            <div class="text">
+                                <pre>
+                                    <code code="bash">
+echo DB_NAME=${db_name} > .env
+echo DB_USER=${db_user} >> .env
+echo DB_PASSWORD=${db_password} >> .env
+echo DB_HOST=${db_host} >> .env
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Rodzaje deploymentów</h1>
+                            <div class="text">
+                                <p>
+                                <ul>
+                                    <li>Wszystko odbywa się w Buddym</li>
+                                    <li>Wszystko odbywa się na serwerze</li>
+                                    <li>Atomic Deployment</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Rodzaje deploymentów / wszystko odbywa się w Buddym</h1>
+                            <div class="text">
+                                <p>Zalety:
+                                <ul>
+                                    <li>Zadziała na każdym serwerze, na którym jest FTP / SFTP</li>
+                                    <li>Mamy pełną kontrolę nad wersjami wszystkich komponentów</li>
+                                    <li>W przypadku błędu deployment po prostu się nie uruchomi</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Rodzaje deploymentów / wszystko odbywa się w Buddym</h1>
+                            <div class="text">
+                                <p>Wady:
+                                <ul>
+                                    <li>Musimy przerzucić sporo plików - możliwy WSOD</li>
+                                    <li>Trwa najdłużej</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Rodzaje deploymentów / wszystko odbywa się po stronie serwera</h1>
+                            <div class="text">
+                                <p>Zalety:
+                                <ul>
+                                    <li>Jest bardzo szybki</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Rodzaje deploymentów / wszystko odbywa się po stronie serwera</h1>
+                            <div class="text">
+                                <p>Wady:
+                                <ul>
+                                    <li>Musimy przygotować wszystkie narzędzia potrzebne do builda na serwerze</li>
+                                    <li>... musimy je akutalizować</li>
+                                    <li>Jak coś pójdzie nie tak z buildem, dostaniemy WSOD</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Rodzaje deploymentów / atomic deployment</h1>
+                            <div class="text">
+                                <p>Zalety:
+                                <ul>
+                                    <li>Zero downtime</li>
+                                    <li>Bardzo szybkie przywracanie starych wersji</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Rodzaje deploymentów / atomic deployment</h1>
+                            <div class="text">
+                                <p>Wady:
+                                <ul>
+                                    <li>Wymaga serwera zarządzalnego</li>
+                                    <li>Najtrudniejszy w konfiguracji</li>
+                                    <li>Sam deployment nie jest najszybszy - zawsze musimy wypychać wszystkie pliki</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Przykład - SasquatchWP</h1>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Stworzenie nowego projektu</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/sas_1.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Dodanie webhooka</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/sas_2.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Stworzenie pipeline</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/sas_3.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Stworzneie pipeline</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/sas_4.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Wybranie akcji</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/sas_5.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Akcje</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/sas_6.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">.htaccess i .env</h1>
+                            <div class="text">
+                                <p>
+                                <pre>
+                                        <code code="bash">
+echo DB_NAME=${db_name} > .env
+echo DB_USER=${db_user} >> .env
+echo DB_PASSWORD=${db_password} >> .env
+echo DB_HOST=${db_host} >> .env
+echo DB_PREFIX=${db_prefix} >> .env
+echo WP_ENV=${wp_env} >> .env
+echo WP_ALLOW_MULTISITE=false >> .env
+echo MULTISITE=false >> .env
+echo SUBDOMAIN_INSTALL=false >> .env
+echo WP_HOME=http:\/\/${folder}.osomapps.com >> .env
+echo WP_SITEURL=http:\/\/${folder}.osomapps.com/wp >> .env
+echo "AUTH_KEY='3/(\$\$OUh3L;-cpllF]7?[gR4:>_dd9uvZmILX2le(MJFE[4B1Dc4(bKlo43,!id+\'" >> .env
+echo "SECURE_AUTH_KEY='sZEwvh_qvQC#s!quc7Q{soy{ZsUy507U#;c5,dN\$C4]B[%h[F?k6o.i5r4QrPnX+'" >> .env
+echo "LOGGED_IN_KEY='OVgt_bslu-oym*^!LE!CZz[y)fNeE:X\$uK85z_Uk9I)wkoOp_:T;c6WXGkR\$VCL*'" >> .env
+echo "NONCE_KEY='*&b_::B@m(aH|v(Y5.uAiATXK2glPO#5qRS|iRWr&0S[@VayQ_{t&hFpry*!Vyyk'" >> .env
+echo "AUTH_SALT='m:hrl7x:=JqZjQ;b}a;]U\$6lJ}F!GomnA|d7}m\`J3g[^;.^ls@cA88CE+gsA4e*8'" >> .env
+echo "SECURE_AUTH_SALT='EIYK)4s*3=>/IU,T^uP&E|yyc/Kq)ElYeP>_E+.ke3sl1|5v*6ZHSqV{Ntt!g61'" >> .env
+echo "LOGGED_IN_SALT='!^zY0-g^o@[k\`z9UB/jm;VX_g}7i*lD{BGVL[/XCeu9>&m1IPuj$>JCUUA.6A[L;'" >> .env
+echo "NONCE_SALT='&P/?+S3S_bs[D!+0&J*!]gkU?yK[*{UTl032Ia)YIe8RC_eVWn)4dx\`qxeBP]={'" >> .env
+echo "ACF_PRO_KEY=${ACF_PRO_KEY}" >> .env
+#.htaccess
+echo "AddType application/x-httpd-php71 .php" > .htaccess
+echo "RewriteEngine on" >> .htaccess
+echo "RewriteCond %{HTTP_HOST} ^(www.)?${folder}.osomapps.com$" >> .htaccess
+echo "RewriteCond %{REQUEST_URI} !^/web/" >> .htaccess
+echo "RewriteCond %{REQUEST_FILENAME} !-f" >> .htaccess
+echo "RewriteCond %{REQUEST_FILENAME} !-d" >> .htaccess
+echo "RewriteRule ^(.*)\$ /web/\$1" >> .htaccess
+echo "RewriteCond %{HTTP_HOST} ^(www.)?${folder}.osomapps.com$" >> .htaccess
+echo "RewriteRule ^(/)?\$ index.php [L]" >> .htaccess
+                                        </code>
+                                    </pre>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">composer</h1>
+                            <div class="text">
+                                <p>
+                                <pre>
+                                    <code code="bash">
+composer update
+cd web/app/themes/${theme_name}/
+composer update
+                                    </code>
+                                </pre>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">npm</h1>
+                            <div class="text">
+                                <p>
+                                <pre>
+                                    <code code="bash">
+cd web/app/themes/${theme_name}/
+npm update
+npm run build
+                                    </code>
+                                </pre>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Upload</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/sas_7.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Przykład - Uptimerobot</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/ping_1.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Przykład - Uptimerobot</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/ping_2.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Przykład - Uptimerobot</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/ping_3.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Przykład - Uptimerobot</h1>
+                            <div class="text">
+                                <p>
+                                    <center><img src="img/ping_4.png" /></center>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Dobre praktyki</h1>
+                            <div class="text">
+                                <ul>
+                                    <li>Opisujmy dobrze co robi pipeline - development, production etc</li>
+                                    <li>Wypełniajmy pole od adresu strony docelowej</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Bezpieczeństwo</h1>
+                            <div class="text">
+                                <p>O czym warto pamiętać:
+                                <ul>
+                                    <li>CI / CD jest dość bezmyślne - uważajmy co wrzucamy</li>
+                                    <li>Szyfrujmy zmienne środowiskowe które tego wymagają</li>
+                                    <li>Jeżeli damy userowi możliwość podejrzenia filesystemu albo edycji pipeline będzie mógł podejrzeć wszystkie zaszyfrowane zmienne</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Jak przyspieszyć deployment</h1>
+                            <div class="text">
+                                <p>
+                                <ul>
+                                    <li>Nie wrzucajmy zbędnych plików - np <code>node_modules</code></li>
+                                    <li>Poprawnie wykorzystujemy w npm czy composer różnicę między dependency a dev-dependency</li>
+                                    <li>Warunkowe odpalanie poleceń - coś co musimy wprowadzić</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color">Pytania?</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h1 class="title header-color center">Kto następny?</h1>
+                        </div>
+                    </div>
+                </section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
