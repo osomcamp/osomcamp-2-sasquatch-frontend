@@ -27,6 +27,10 @@
 .text-center {
   text-align: center !important; }
 
+.hljs {
+  background-color: #203744 !important;
+  font-size: 110% !important; }
+
 .logo-sa {
   opacity: 0.9;
   position: absolute;
@@ -175,6 +179,8 @@ h2.title {
 
 .text {
   padding: 0 50px !important; }
+  .text h1, .text h2, .text h3, .text h4, .text h5, .text h6 {
+    color: #203744 !important; }
 
 .text.nopadding {
   padding: 0 !important;
@@ -260,10 +266,10 @@ h2.title {
   border-radius: 10px !important; }
 
 .reveal .text pre code {
-  max-height: 500px !important; }
+  max-height: 570px !important; }
 
 .text code {
-  padding: 20px !important; }
+  padding: 30px !important; }
   .text code a {
     color: #18D766 !important; }
 

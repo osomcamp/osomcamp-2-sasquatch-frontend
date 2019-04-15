@@ -139,6 +139,157 @@ views
                     </div>
                 </section>
 
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h2 class="title header-color">Funkcje Timber pomocne przy tworzeniu kodu HTML/SCSS</h2>
+                            <div class="text">
+                                <code><a href="https://timber.github.io/docs/guides/cheatsheet/">https://timber.github.io/docs/guides/cheatsheet/</a></code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <div class="text">
+                                <h3><strong>Include:</strong></h3>
+<pre><code>{% include "views/templates/front/front-module.twig" %}</code></pre>
+                                <p class="fragment"><small>przyklad z dodatkową klasą:</small></p>
+<pre class="fragment"><code>{% include "views/templates/front/front-module.twig" with { 'class': "m-b-60" } %}</code></pre>
+                                <p class="fragment"><small>Zdefiniowanie 'class' w HTML (w szablonie front-module.twig):</small></p>
+<pre class="fragment"><code><div class="front-module {{ class }}">...</div></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            
+                            <div class="text">
+                                <h3><strong>Bezpośrednie odniesienie do naszego motywu:</strong></h3>
+<pre><code>{{ theme.link }}</code></pre>
+                                <p class="fragment"><small>przyklad:</small></p>
+<pre class="fragment"><code><img src="{{ theme.link }}/dist/images/logo.svg" alt=""></code></pre>
+                                <p class="fragment"><small>działanie:</small></p>
+<pre class="fragment"><code><img src="https://naszadomena.pl/app/themes/nazwa_motywu/dist/images/logo.svg" alt="" /></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <div class="text">
+                                <h3><strong>Bezpośrednie odniesienie do całego WordPressa:</strong></h3>
+<pre><code>{{ site.url }}</code></pre>
+                                <p class="fragment"><small>przyklad:</small></p>
+<pre class="fragment"><code><a href="{{ site.url }}"><img src="{{ theme.link }}/dist/images/logo.svg" alt=""></a></code></pre>
+                                <p class="fragment"><small>działanie:</small></p>
+<pre class="fragment"><code><a href="https://naszadomena.pl/">
+    <img src="https://naszadomena.pl/app/themes/nazwa_motywu/dist/images/logo.svg" alt="" />
+</a></code></pre>
+                                <p class="fragment">Jest to adres podany w Ustawienia - Ogólne - Adres witryny (url)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <div class="text">
+                                <h3><strong>Wyświetlenie aktualnego roku:</strong></h3>
+<pre><code>{{ now|date('Y') }}</code></pre>
+                                <p class="fragment"><small>przyklad:</small></p>
+<pre class="fragment"><code><span>2019</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <div class="text">
+                                <h3><strong>Nazwa i opis strony:</strong></h3>
+<pre><code>{{ site.name }}
+{{ site.description }}
+</code></pre>
+                                <p class="fragment"><small>przyklad:</small></p>
+<pre class="fragment"><code><a href="{{ site.url }}" title="{{ site.name }}">
+    <img src="{{ theme.link }}/dist/images/logo.svg" alt="{{ site.description }}">
+</a></code></pre>
+                                <p class="fragment">Nazwa i opis pochodzą z Ustawienia - Ogólne - Tytuł witryny / Opis</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h2 class="title header-color">Funkcje pomocne przy podpinaniu wpisów:</h2>
+                            <div class="text">
+                                <p><strong>Tytuł wpisu:</strong></p>
+<pre><code>{{ post.title }}</code></pre>
+                                <p class="fragment"><small>przyklad:</small></p>
+<pre class="fragment"><code><h1>Tytuł najnowszego wpisu na naszym blogu</h1></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h2 class="title header-color">Funkcje pomocne przy podpinaniu wpisów:</h2>
+                            <div class="text">
+                                <p><strong>Odnośnik do wpisu:</strong></p>
+<pre><code>{{ post.link }}</code></pre>
+                                <p class="fragment"><small>przyklad:</small></p>
+<pre class="fragment"><code><h1><a href="{{ post.link }}" title="{{ site.url }} - {{ post.title }}">{{ post.title }}</a></h1></code></pre>
+                                <p class="fragment"><small>Otrzymujemy:</small></p>
+<pre class="fragment"><code><h1>
+    <a href="https://naszadomena.pl/tytul-wpisu/" title="Nazwa strony - Tytuł najnowszego wpisu na naszym blogu">Tytuł najnowszego wpisu na naszym blogu</a>
+</h1></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h2 class="title header-color">Funkcje pomocne przy podpinaniu wpisów:</h2>
+                            <div class="text">
+                                <p><strong>Data publikacji wpisu:</strong></p>
+<pre><code>{{ post.date("d F Y") }}</code></pre>
+                                <p class="fragment"><small>przyklad:</small></p>
+<pre class="fragment"><code><p>12 marca 2019</p></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h2 class="title header-color">Funkcje pomocne przy podpinaniu wpisów:</h2>
+                            <div class="text">
+                                <p><strong>Wyświetlenie contentu wpisu:</strong></p>
+<pre><code>{{ post.content }}</code></pre>
+                                <p class="fragment"><small>przyklad:</small></p>
+<pre class="fragment"><code><p>Lorem ipsum dolor...</p></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="inner">
+                        <div class="inner-full">
+                            <h2 class="title header-color">To wszystko na dziś, dziękuję za uwagę!</h2>
+                            <div class="text">
+                                <h1 class="blue">Pytania?</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 			</div>
 		</div>
 

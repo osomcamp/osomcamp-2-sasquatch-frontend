@@ -31,6 +31,11 @@ $white-color: #FFFFFF;
 	text-align: center!important;
 }
 
+.hljs {
+	background-color: $text-color!important;
+	font-size: 110%!important;
+}
+
 .logo-sa {
 	opacity: 0.9;
 	position: absolute;
@@ -203,6 +208,10 @@ h2.title {
 
 .text {
 	padding: 0 50px!important;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $header-color!important;
+	}
 }
 
 .text.nopadding {
@@ -306,12 +315,12 @@ h2.title {
 
 .reveal .text pre {
 	code {
-		max-height: 500px!important;
+		max-height: 570px!important;
 	}
 }
 
 .text code {
-	padding: 20px!important;
+	padding: 30px!important;
 
 	a {
 		color: $blue-color!important;
