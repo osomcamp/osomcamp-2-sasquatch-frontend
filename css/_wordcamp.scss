@@ -1,3 +1,9 @@
+$header-color: #203744;
+$blue-color: #18D766;
+$text-color: #203744;
+$light-color: #F2F2F2;
+$white-color: #FFFFFF;
+
 :root {
   --header-color: #203744;
 	--blue-color: #18D766;
@@ -11,6 +17,7 @@
 	--weight700: 700;
 
 	--font70: 60px;
+	--font49: 49px;
 	--font28: 31px;
 	--font33: 35px;
 	--font20: 24px;
@@ -74,12 +81,20 @@
 	width: 50%;
 }
 
+.slides .inner-left-small {
+	width: 22%;
+}
+
 .slides .inner-full {
 	width: 100%;
 }
 
 .slides .inner-right {
 	width: 25%;
+}
+
+.slides .inner-right-big {
+	width: 74%;
 }
 
 .slides .inner-right-50 {
@@ -98,6 +113,10 @@
 	margin-bottom: 80px!important;
 	padding-left: 50px!important;
 	line-height: normal!important;
+}
+
+h2.title {
+	font-size: var(--font49)!important;
 }
 
 .title::before {
@@ -287,6 +306,10 @@
 
 .text code {
 	padding: 20px!important;
+
+	a {
+		color: $blue-color!important;
+	}
 }
 
 .colorbg .title {
@@ -294,7 +317,7 @@
 }
 
 .colorbg .title span {
-	color: #3352CF!important;
+	color: var(--blue-color)!important;
 }
 
 .colorbg .title::before {
