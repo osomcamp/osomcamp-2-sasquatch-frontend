@@ -270,6 +270,8 @@ h2.title {
 
 .text code {
   padding: 30px !important; }
+  .text code.no-padding {
+    padding: 30px 0 !important; }
   .text code a {
     color: #18D766 !important; }
 
