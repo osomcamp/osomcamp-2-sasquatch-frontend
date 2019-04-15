@@ -304,6 +304,12 @@ h2.title {
 	border-radius: 10px!important;
 }
 
+.reveal .text pre {
+	code {
+		max-height: 500px!important;
+	}
+}
+
 .text code {
 	padding: 20px!important;
 

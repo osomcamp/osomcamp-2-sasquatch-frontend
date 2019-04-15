@@ -259,6 +259,9 @@ h2.title {
 .text code, .text pre {
   border-radius: 10px !important; }
 
+.reveal .text pre code {
+  max-height: 500px !important; }
+
 .text code {
   padding: 20px !important; }
   .text code a {
